@@ -1,1 +1,76 @@
-<app-header></app-header>
+<!-- <div class="header-wrapper">
+    <app-header></app-header>
+</div> -->
+<div class="mian-container">
+    <div class="landing-page bg-blue-300">
+        <div class="grid wrapper pt-8">
+            <div class="col-12 md:col-6 lg:col-6 info-container">
+                <div class="heading text-5xl text-center">
+                    Automated crypto trading bot for everyone
+                </div>
+                <div class="description text-3xl text-center pt-5">
+                    Trade crypto like a pro without being one.
+                    Use our powerful trading bot
+                    and algorithmic strategies.
+                </div>
+                <div class="tag text-2xl text-center pt-4">
+                    Trade faster. Maximize results.
+                </div>
+                <div class="action text-center pt-8">
+                    <button pButton class="p-button-rounded">Get Started</button>
+                </div>
+            </div>
+            <div class="col-12 md:col-6 lg:col-6 image-container">
+                <img src="../assets/cryptocurrency_main.svg">
+                <div class="child-icon1 absolute ">
+                    <img src="../assets/ethereum-eth-logo.svg" height="50" width="50" alt="">
+                </div>
+                <div class="child-icon2 absolute ">
+                    <img src="../assets/usd-coin-usdc-logo.svg" height="50" width="50" alt="">
+                </div>
+                <div class="child-icon3 absolute ">
+                    <img src="../assets/baby-doge-coin-babydoge-logo.svg" height="50" width="50" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="feature-page">
+        <div class="text-5xl py-4">Features</div>
+        <div class="grid">
+            <div class="col-12 md:col-4 lg:col-4" *ngFor="let item of featureData">
+                <p-card [header]="item.name" styleClass="3">
+                    <ng-template pTemplate="header">
+                        <div class="py-4">
+                            <img alt="Card" [src]="item.image" height="80" width="80" />
+                        </div>
+                    </ng-template>
+                    <p class="m-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque
+                        quas!
+                    </p>
+                </p-card>
+            </div>
+        </div> 
+    </div>
+    <div class="exchange-page bg-blue-300">
+        <div class="grid">
+            <div class="col-12 md:col-6 lg:col-6">
+                <div class="text-2xl">
+                    TRUSTED BY THE WORLD’S BEST
+                </div>
+                <div class="text-5xl">
+                    Trade on the top crypto exchanges - in one place
+                </div>
+            </div>
+            <div class="col-12 md:col-6 lg:col-6">
+                <div class="grid surface-section p-1 border-round-md">
+                    <div class="col-6 md:col-4 lg:col-4" *ngFor="let item of exchangeImage">
+                        <div class="exchange-image-wrapper cursor-pointer shadow-8">
+                            <img [src]="item" height="50">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

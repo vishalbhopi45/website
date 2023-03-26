@@ -29,9 +29,17 @@
             ],
             "styles": [
               "src/styles.scss",
-              "node_modules/primeicons/primeicons.css",
-              "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
-              "node_modules/primeng/resources/primeng.min.css"
+              "node_modules/primeflex/primeflex.css",
+              {
+                "input": "src/theme/theme-lara-light-blue.scss",
+                "bundleName": "lara-blue-light",
+                "inject": false
+              },
+              {
+                "input": "src/theme/theme-lara-dark-blue.scss",
+                "bundleName": "lara-blue-dark",
+                "inject": false
+              }
             ],
             "scripts": []
           },

@@ -5,7 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import {ButtonModule} from 'primeng/button';
-
+import {CheckboxModule} from 'primeng/checkbox';
+import { PrimengModule } from './modules/primeng/primeng.module';
+import { CarouselModule } from 'primeng/carousel';
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +16,10 @@ import {ButtonModule} from 'primeng/button';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ButtonModule
+    ButtonModule,
+    CheckboxModule,
+    PrimengModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
