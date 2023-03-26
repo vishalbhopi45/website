@@ -47,6 +47,11 @@ article {
         }
     }
 }
+::ng-deep {
+    .p-card {
+        height: 100% !important;
+      }
+}
 @keyframes mover {
     0% { transform: translateY(0); }
     100% { transform: translateY(-10px); }
